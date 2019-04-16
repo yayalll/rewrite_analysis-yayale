@@ -1,5 +1,5 @@
-from .vggnet import VGG
+from .shufflenet_v2 import ShuffleNetV2
 
 modeldict = {
-    'analysis_vgg11_bn': lambda inp, outp, size: VGG(inp, outp, size, 'VGG11', batch_norm=True),
+    'analysis_ShuffleNetV2_bn': lambda inp, outp, size: ShuffleNetV2(inp, outp, size),
 }
